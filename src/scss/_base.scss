@@ -1,0 +1,39 @@
+// BASE
+// Builds upon Normalize to set a opinionated baseline for HTML & CSS
+
+// ENFORCE BOX MODEL
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+// SETS DEFAULT BG COLOR
+body {
+  background-color: #fff;
+}
+
+// AVOID MARGIN COLLAPSE
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, figure,
+blockquote, details, hr,
+fieldset, pre, table {
+  margin-top: 0;
+}
+
+// REMOVE BROWSER INPUT STYLES
+select {
+  appearance: none;
+}
+
+// VERTICALLY CENTERS IMGS
+img {
+  vertical-align: middle;
+}
+
+// SETS DEFAULT TABLE STYLES
+table { background-color: #fff; }
+th { text-align: left; }

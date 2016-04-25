@@ -1,2 +1,2 @@
-# metaphor
-An elegant &amp; cutting-edge UI toolkit to rapidly create prototypes &amp; applications with CSUN branding.
+# Metaphor UI Kit
+An elegantly crafted UI Kit for CSUN branded prototypes & applications.
