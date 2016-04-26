@@ -1,0 +1,141 @@
+// PRIMARY NAV
+//
+
+.primary-nav {
+  @include clearfix();
+  position: relative;
+  background-color: rgba(#fff, .9);
+}
+
+.primary-nav__mobile {
+  position: relative;
+  height: 45px;
+  text-align: center;
+
+  @media (min-width: 544px) {
+    float: left;
+  }
+}
+
+.primary-nav__btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+
+  @media (min-width: 544px) {
+    display: none;
+  }
+
+
+  .bar {
+    width: 100%;
+    height: 2px;
+    margin-top: 4px;
+    background-color: $red;
+  }
+  .bar:first-child {
+    margin-top: 0;
+  }
+}
+
+.primary-nav__brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 74px;
+  height: 20px;
+  cursor: pointer;
+  background-image: $csun-logo;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: $csun-logo-retina;
+  }
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: 544px) {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.primary-nav__links {
+  @include clearfix();
+  display: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+
+
+  @media (min-width: 544px) {
+    display: block;
+    float: right;
+    text-align: right;
+    // margin-right: -5px;
+
+    li {
+      float: left;
+    }
+  }
+}
+
+.primary-nav__links--open { display: block; }
+
+.primary-nav__link {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #4a4a4a;
+  text-decoration: none;
+
+  &:hover {
+    color: $red;
+  }
+
+  &.active {
+    color: #fff;
+    background-color: $red;
+    border-radius: 3px;
+  }
+
+  @media (min-width: 544px) {
+    padding: 11px 5px;
+    border-top: 2px solid transparent;
+
+    &.active {
+      color: $red;
+      background-color: transparent;
+      border-color: $red;
+      border-radius: 0;
+    }
+  }
+}
+.primary-nav--cream {
+  background-color: rgba($cream, .9);
+
+  .bar {
+    background-color: $red;
+  }
+}
+
+.primary-nav--black {
+  background-color: rgba($black, .9);
+
+  .bar {
+    background-color: #fff;
+  }
+
+  .primary-nav__brand {
+    background-image: $csun-logo--inverse;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: $csun-logo-retina--inverse;
+    }
+  }
+}
