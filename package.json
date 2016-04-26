@@ -1,7 +1,7 @@
 {
   "name": "metaphor",
+  "version": "0.0.1",
   "description": "An elegantly crafted UI Kit for CSUN branded prototypes & applications",
-  "private": true,
   "devDependencies": {
     "gulp": "^3.9.1",
     "laravel-elixir": "^5.0.0",
