@@ -4,7 +4,6 @@
 // ENFORCE BOX MODEL
 html {
   box-sizing: border-box;
-  height: 100%;
 }
 
 *, *::before, *::after {
@@ -25,9 +24,9 @@ fieldset, pre, table {
 }
 
 // REMOVE BROWSER INPUT STYLES
-select {
-  appearance: none;
-}
+// select {
+//   appearance: none;
+// }
 
 // VERTICALLY CENTERS IMGS
 img {

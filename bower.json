@@ -1,7 +1,6 @@
 {
   "name": "metaphor",
   "description": "An elegantly crafted UI Kit for CSUN branded prototypes & applications",
-  "private": true,
   "devDependencies": {
     "normalize-css": "^4.1.1"
   },
