@@ -1,7 +1,24 @@
 {
   "name": "metaphor",
-  "version": "0.1.0",
+  "version": "0.0.3",
   "description": "An elegantly crafted UI Kit for CSUN branded prototypes & applications",
+  "keywords": [
+    "csun",
+    "csun-ui",
+    "ui kit",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "ui"
+  ],
+  "homepage": "http://alexhernandez.github.io/metaphor",
+  "main": [
+    "src/js/metaphor.js",
+    "src/sass/metaphor.scss"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "normalize-css": "^4.1.1"
   },

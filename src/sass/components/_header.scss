@@ -1,0 +1,31 @@
+// HEADER
+//
+
+.header {
+  position: relative;
+
+  @media (min-width: 544px) {
+    height: 475px;
+  }
+}
+
+.container {
+  @include clearfix();
+
+  @media (min-width: 544px) {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 45px;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: 42px;
+  }
+}
