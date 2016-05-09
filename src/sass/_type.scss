@@ -1,8 +1,98 @@
 body {
+  @include font-smoothing();
   font-family: $font-base;
   font-size: 1rem;
   line-height: 1.5;
   color: #4a4a4a;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
+
+// DESKTOP
+// small: 12px / 1.4
+// base: 15px / 1.5
+// emphasis: 18px / 1.6
+
+// MOBILE
+// small: 12px / 1.5
+// base: 15px / 1.5
+// emphasis: 18px / 1.6
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: $font-brand;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: modular-scale(0);
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  small {
+    font-size: 60%;
+    font-weight: normal;
+    color: rgba(#4a4a4a, .6);
+  }
+}
+
+.headline--sm {
+  margin-bottom: modular-scale(1);
+  font-size: modular-scale(1);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p, ul, ol {
+  margin-bottom: modular-scale(1);
+  font-size: modular-scale(0);
+}
+
+ul {
+  list-style-type: square;
+}
+
+small {
+  font-size: modular-scale(-1);
+}
+
+.notice {
+  color: rgba(#4a4a4a, .75);
+}
+
+.section {
+  padding: 20px 0;
+  // background-color: rgba(200, 200, 200, .5);
+}
+// p {
+//   font-size: 1rem;
+//   line-height: 1.6;
+
+//   &.intro {
+//     font-size: 1.4rem;
+//     padding: 20px;
+//     border-top: 1px solid #ccc;
+//     border-bottom: 1px solid #ccc;
+//   }
+
+//   &.author {}
+//   &.pullquote {}
+//   &.emphasis {
+//     font-size: 1.2rem;
+//   }
+// }
+
+// small {
+//   font-size: 0.8rem;
+// }
+
+// .lead {
+//   font-size: 1.125rem;
+//   line-height: 1.6;
+// }
+
+
+// .font-smooth{
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }

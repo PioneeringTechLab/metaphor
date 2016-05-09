@@ -13,6 +13,9 @@ $black: #000;
 $cream: #d8d2c4;
 
 // TYPOGRAPHY
-$font-base: "Open Sans", helvetica, arial, sans-serif;
+$font-base: "Open Sans", "Helvetica Neue", helvetica, arial, sans-serif;
 $font-code: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-brand: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-brand: "museo-sans", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+
+// MISC
+$border-radius: 3px;
