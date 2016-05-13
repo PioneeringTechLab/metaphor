@@ -1,10 +1,5 @@
-body {
-  @include font-smoothing();
-  font-family: $font-base;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #4a4a4a;
-}
+// TYPOGRAPHY
+//
 
 // DESKTOP
 // small: 12px / 1.4
@@ -16,83 +11,74 @@ body {
 // base: 15px / 1.5
 // emphasis: 18px / 1.6
 
+
+html { font-size: $font-size-root; }
+
+body {
+  @include font-smoothing();
+  font-family: $font-base;
+  font-size: modular-scale(0);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6 {
+  margin-bottom: modular-scale(-1);
   font-family: $font-brand;
   font-weight: 300;
-}
+  line-height: 1.2;
 
-h1 {
-  font-size: modular-scale(0);
-}
-
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6 {
-  small {
+  small,
+  .milli {
     font-size: 60%;
     font-weight: normal;
     color: rgba(#4a4a4a, .6);
   }
 }
 
-.headline--sm {
+// HEADERS
+h1 { font-size: modular-scale(5); }
+h2 { font-size: modular-scale(4); }
+h3 { font-size: modular-scale(3); }
+h4 { font-size: modular-scale(2); }
+h5 { font-size: modular-scale(1); }
+h6 { font-size: modular-scale(0); }
+
+.page-header {
+  padding-bottom: modular-scale(0);
   margin-bottom: modular-scale(1);
-  font-size: modular-scale(1);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border-bottom: 1px solid #ccc;
 }
 
+// DISPLAY TYPE
+.giga { font-size: modular-scale(8); }
+.mega { font-size: modular-scale(7); }
+.kilo { font-size: modular-scale(6); }
+
+// SMALL TYPE
+small,
+.milli { font-size: modular-scale(-1); }
+.micro { font-size: modular-scale(-2); }
+
+// GENERAL
 p, ul, ol {
   margin-bottom: modular-scale(1);
   font-size: modular-scale(0);
+  color: inherit;
 }
 
-ul {
-  list-style-type: square;
+// LISTS
+ul { list-style-type: square; }
+ul, ol { line-height: 1.6; }
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
 }
 
-small {
-  font-size: modular-scale(-1);
+hr {
+  border: 0;
+  border-top: 1px solid rgba(#4a4a4a, .4);
 }
-
-.notice {
-  color: rgba(#4a4a4a, .75);
-}
-
-.section {
-  padding: 20px 0;
-  // background-color: rgba(200, 200, 200, .5);
-}
-// p {
-//   font-size: 1rem;
-//   line-height: 1.6;
-
-//   &.intro {
-//     font-size: 1.4rem;
-//     padding: 20px;
-//     border-top: 1px solid #ccc;
-//     border-bottom: 1px solid #ccc;
-//   }
-
-//   &.author {}
-//   &.pullquote {}
-//   &.emphasis {
-//     font-size: 1.2rem;
-//   }
-// }
-
-// small {
-//   font-size: 0.8rem;
-// }
-
-// .lead {
-//   font-size: 1.125rem;
-//   line-height: 1.6;
-// }
-
-
-// .font-smooth{
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
