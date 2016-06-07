@@ -2161,12 +2161,14 @@ textarea {
 .type--red {
   color: #d00d2d; }
 
+.type--cream {
+  color: #d9d4c5; }
+
 .bg--light-gray {
   background-color: #f7f7f7; }
 
 .header--sm {
   font-size: 15px;
-  color: #d9d4c5;
   text-transform: uppercase;
   letter-spacing: 1px; }
 
