@@ -2211,8 +2211,16 @@ textarea {
 .type--red {
   color: #d00d2d; }
 
+.type--cream {
+  color: #d8d2c4; }
+
 .bg--light-gray {
   background-color: #f7f7f7; }
+
+.header--sm {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .metalab-wrapper {
   position: absolute;
