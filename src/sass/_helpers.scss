@@ -56,5 +56,12 @@
 
 .type--white { color: #fff; }
 .type--red { color: $red; }
+.type--cream { color: $cream; }
 
 .bg--light-gray { background-color: #f7f7f7; }
+
+.header--sm {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
