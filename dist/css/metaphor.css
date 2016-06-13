@@ -330,6 +330,12 @@ blockquote {
 .type--thin {
   font-weight: 100; }
 
+.type--bold {
+  font-weight: bold; }
+
+.type--italic {
+  font-style: italic; }
+
 .type--marginless {
   margin: 0; }
 
@@ -1000,7 +1006,7 @@ blockquote {
     content: ""; }
 
 .primary-nav--cream {
-  background-color: rgba(216, 210, 196, 0.95); }
+  background-color: rgba(216, 210, 196, 0.9); }
   .primary-nav--cream .bar {
     background-color: #d00d2d; }
 
@@ -1134,6 +1140,10 @@ blockquote {
           display: table;
           clear: both;
           content: ""; } }
+  .sub-nav--inverse {
+    color: #fff; }
+    .sub-nav--inverse .sub-nav-wrapper {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
 
 .sub-nav--fixed {
   position: fixed;
@@ -1163,7 +1173,7 @@ blockquote {
   margin-top: 13px;
   font-size: 20px; }
   .sub-nav__title a {
-    color: #4a4a4a;
+    color: inherit;
     text-decoration: none; }
 
 .sub-nav__links {
@@ -1201,7 +1211,7 @@ blockquote {
   display: block;
   padding: 8px 25px;
   font-size: 14px;
-  color: #4a4a4a;
+  color: inherit;
   text-decoration: none;
   border-radius: 3px; }
   .sub-nav__link:hover {
