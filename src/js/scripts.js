@@ -51,4 +51,12 @@
     $(document).find('.modal__outer.modal--show').removeClass('modal--show');
   });
 
+  // Close Alerts
+  var closeLinks = $('a[data-alert-close]');
+  closeLinks.on('click', closeHandleMethod);
+
+  
+  function closeHandleMethod(e) {
+    $(this).parent().hide();
+  }
 })(jQuery);
