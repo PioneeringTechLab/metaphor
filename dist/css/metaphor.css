@@ -259,6 +259,9 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+.giga, .mega, .kilo {
+  letter-spacing: -1px; }
+
 .giga {
   font-size: 4.29982rem; }
 
@@ -339,6 +342,10 @@ blockquote {
 
 .type--marginless {
   margin: 0; }
+
+.type--uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .container {
   margin-left: auto;
@@ -966,45 +973,16 @@ blockquote {
   .col-xl-offset-12 {
     margin-left: 100%; } }
 
-.header {
-  position: relative;
-  z-index: 1;
-  height: 100px; }
-
 .section {
   padding: 50px 0; }
-
-.main {
-  padding-top: 100px;
-  margin-top: -100px; }
-
-.main > .section-hero {
-  position: relative;
-  z-index: 0;
-  text-shadow: 0 2px 2px rgba(74, 74, 74, 0.5);
-  background-color: #252525;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 992px) {
-    .main > .section-hero {
-      min-height: 100px;
-      padding-top: 275px;
-      padding-bottom: 175px;
-      margin-top: -125px; } }
-
-.main > .section-headline {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  @media (min-width: 992px) {
-    .main > .section-headline {
-      min-height: 100px;
-      padding: 80px 0 25px;
-      margin-top: -55px; } }
+  .section--lg {
+    padding: 75px 0; }
+  .section--bottomless {
+    padding-bottom: 0; }
 
 .primary-nav {
   position: relative;
+  z-index: 9999;
   background-color: rgba(255, 255, 255, 0.95); }
   .primary-nav::after {
     display: table;
@@ -2593,7 +2571,7 @@ h1, h2, h3, h4, h5, h6 {
   clip: rect(0 0 0 0);
   border: 0; }
 
-.img-fluid {
+.img--fluid {
   display: block;
   max-width: 100%;
   height: auto; }
@@ -2613,6 +2591,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .type--cream {
   color: #d8d2c4; }
+
+.type--gray {
+  color: #666; }
 
 .bg--light-gray {
   background-color: #f7f7f7; }
