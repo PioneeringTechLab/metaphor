@@ -33,7 +33,7 @@
   // DATEPICKER
   var d = $( ".datepicker" );
   d.datepicker({
-    minDate: new Date(),
+    // minDate: new Date(),
     nextText: '<i class="fa fa-caret-right"></i>',
     prevText: '<i class="fa fa-caret-left"></i>'
   });
@@ -55,7 +55,7 @@
   var closeLinks = $('a[data-alert-close]');
   closeLinks.on('click', closeHandleMethod);
 
-  
+
   function closeHandleMethod(e) {
     $(this).parent().hide();
   }
