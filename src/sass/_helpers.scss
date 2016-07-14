@@ -60,3 +60,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.cf {
+  @include clearfix();
+}
