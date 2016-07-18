@@ -29,10 +29,11 @@
 @import "feature";
 @import "modals";
 @import "progress";
+@import "accordian";
 @import "helpers";
 
 // Dependencies
-@import "vendor/font-awesome/font-awesome.scss";
+@import "vendor/font-awesome/font-awesome";
 
 // THEME
 @import "theme/meta-footer";
