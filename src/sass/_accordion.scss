@@ -1,7 +1,7 @@
-// ACCORDIAN
+// ACCORDION
 //
 
-.accordian__header {
+.accordion__header {
   padding: modular-scale(-3) modular-scale(0);
   margin-bottom: -1px;
   cursor: pointer;
@@ -10,7 +10,7 @@
   border-radius: 2px;
 }
 
-.accordian__content {
+.accordion__content {
   @include clearfix();
   display: none;
   padding: modular-scale(0);

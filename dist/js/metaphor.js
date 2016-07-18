@@ -2129,18 +2129,18 @@ return $.datepicker;
   'use strict';
 
   // Vars
-  var accordian = $('.accordian'),
-    accordianHeader = $('.accordian__header'),
-    accordianContent = $('.accordian__content'),
+  var accordion = $('.accordion'),
+    accordionHeader = $('.accordion__header'),
+    accordionContent = $('.accordion__content'),
     showOneAnswerAtATime = false;
 
   /**
    * Save question focus
    */
-  var saveFocus = function (elem, thisAccordianHeaders) {
+  var saveFocus = function (elem, thisAccordionHeaders) {
 
     // Reset other tab attributes
-    thisAccordianHeaders.each(function () {
+    thisAccordionHeaders.each(function () {
       $(this).attr('tabindex', '-1');
       $(this).attr('aria-selected', 'false');
     });
@@ -2156,27 +2156,27 @@ return $.datepicker;
   /**
    * Show answer on click
    */
-  var showHeader = function (elem, thisAccordianHeaders) {
+  var showHeader = function (elem, thisAccordionHeaders) {
     var thisFaqAnswer = elem.next();
 
     // Save focus
-    saveFocus(elem, thisAccordianHeaders);
+    saveFocus(elem, thisAccordionHeaders);
 
     // Set this tab attributes
-    if (thisFaqAnswer.hasClass('accordian__content--show')) {
+    if (thisFaqAnswer.hasClass('accordion__content--show')) {
       // Hide answer
-      thisFaqAnswer.removeClass('accordian__content--show');
+      thisFaqAnswer.removeClass('accordion__content--show');
       elem.attr('aria-expanded', 'false');
       thisFaqAnswer.attr('aria-hidden', 'true');
     } else {
       if (showOneAnswerAtATime) {
         // Hide all answers
-        accordianContent.removeClass('accordian__content--show').attr('aria-hidden', 'true');
-        accordianHeader.attr('aria-expanded', 'false');
+        accordionContent.removeClass('accordion__content--show').attr('aria-hidden', 'true');
+        accordionHeader.attr('aria-expanded', 'false');
       }
 
       // Show answer
-      thisFaqAnswer.addClass('accordian__content--show');
+      thisFaqAnswer.addClass('accordion__content--show');
       elem.attr('aria-expanded', 'true');
       thisFaqAnswer.attr('aria-hidden', 'false');
     }
@@ -2185,7 +2185,7 @@ return $.datepicker;
   /**
    * Keyboard interaction
    */
-  var keyboardInteraction = function (elem, e, thisAccordianHeaders) {
+  var keyboardInteraction = function (elem, e, thisAccordionHeaders) {
     var keyCode = e.which,
       nextQuestion = elem.next().next().is('dt') ? elem.next().next() : false,
       previousQuestion = elem.prev().prev().is('dt') ? elem.prev().prev() : false,
@@ -2252,7 +2252,7 @@ return $.datepicker;
       e.stopPropagation();
 
       // Show answer content
-      showHeader(elem, thisAccordianHeaders);
+      showHeader(elem, thisAccordionHeaders);
       break;
     }
 
@@ -2263,11 +2263,11 @@ return $.datepicker;
    */
 
   // Each FAQ Question
-  accordianHeader.each(function (i) {
+  accordionHeader.each(function (i) {
     $(this).attr({
-      'id': 'accordian__header--' + i,
+      'id': 'accordion__header--' + i,
       'role': 'tab',
-      'aria-controls': 'accordian__content--' + i,
+      'aria-controls': 'accordion__content--' + i,
       'aria-expanded': 'false',
       'aria-selected': 'false',
       'tabindex': '-1'
@@ -2275,19 +2275,19 @@ return $.datepicker;
   });
 
   // Each FAQ Answer
-  accordianContent.each(function (i) {
+  accordionContent.each(function (i) {
     $(this).attr({
-      'id': 'accordian__content--' + i,
+      'id': 'accordion__content--' + i,
       'role': 'tabpanel',
-      'aria-labelledby': 'accordian__header--' + i,
+      'aria-labelledby': 'accordion__header--' + i,
       'aria-hidden': 'true'
     });
   });
 
   // Each FAQ Section
-  accordian.each(function () {
+  accordion.each(function () {
     var $this = $(this),
-      thisAccordianHeaders = $this.find('.accordian__header');
+      thisAccordionHeaders = $this.find('.accordion__header');
 
     // Set section attributes
     $this.attr({
@@ -2295,7 +2295,7 @@ return $.datepicker;
       'aria-multiselectable': 'true'
     });
 
-    thisAccordianHeaders.each(function (i) {
+    thisAccordionHeaders.each(function (i) {
       var $this = $(this);
 
       // Make first tab clickable
@@ -2305,17 +2305,17 @@ return $.datepicker;
 
       // Click event
       $this.on('click', function () {
-        showHeader($(this), thisAccordianHeaders);
+        showHeader($(this), thisAccordionHeaders);
       });
 
       // Keydown event
       $this.on('keydown', function (e) {
-        keyboardInteraction($(this), e, thisAccordianHeaders);
+        keyboardInteraction($(this), e, thisAccordionHeaders);
       });
 
       // Focus event
       $this.on('focus', function () {
-        saveFocus($(this), thisAccordianHeaders);
+        saveFocus($(this), thisAccordionHeaders);
       });
     });
   });

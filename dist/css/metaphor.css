@@ -2593,7 +2593,7 @@ h1, h2, h3, h4, h5, h6 {
   .progress__bar--danger {
     background-color: #d00d2d; }
 
-.accordian__header {
+.accordion__header {
   padding: 0.5787037037rem 1rem;
   margin-bottom: -1px;
   cursor: pointer;
@@ -2601,20 +2601,20 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #ccc;
   border-radius: 2px; }
 
-.accordian__content {
+.accordion__content {
   display: none;
   padding: 1rem;
   margin: 0 0 -1px;
   background-color: #fff;
   border: 1px solid #ccc; }
-  .accordian__content::before, .accordian__content::after {
+  .accordion__content::before, .accordion__content::after {
     display: table;
     content: " "; }
-  .accordian__content::after {
+  .accordion__content::after {
     clear: both; }
-  .accordian__content--show {
+  .accordion__content--show {
     display: block; }
-  .accordian__content p:last-child {
+  .accordion__content p:last-child {
     margin-bottom: 0; }
 
 .sr-only {
