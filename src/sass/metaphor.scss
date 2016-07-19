@@ -11,6 +11,9 @@
 // RESETS
 @import "normalize";
 
+// Dependencies
+@import "vendor/font-awesome/font-awesome";
+
 // CORE
 @import "base";
 @import "type";
@@ -31,9 +34,6 @@
 @import "progress";
 @import "accordion";
 @import "helpers";
-
-// Dependencies
-@import "vendor/font-awesome/font-awesome";
 
 // THEME
 @import "theme/meta-footer";
