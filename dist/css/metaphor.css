@@ -4345,6 +4345,7 @@ input[type="text"],
 input[type="email"],
 input[type="search"],
 input[type="submit"],
+input[type="reset"],
 input[type="password"] {
   height: 40px; }
 
