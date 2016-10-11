@@ -1,6 +1,6 @@
 'use strict';
 
-const elixir = require('laravel-elixir');
+import elixir from 'laravel-elixir';
 let bowerPath = './bower_components';
 
 elixir.config.assetsPath = 'src';
