@@ -13,6 +13,11 @@ body {
   color: #4a4a4a;
 }
 
+::selection {
+  color: #fff;
+  background-color: #252525;
+}
+
 // HEADERS
 h1,h2,h3,h4,h5,h6 {
   margin-bottom: modular-scale(-1);
@@ -87,11 +92,24 @@ ul, ol { line-height: 1.6; }
   list-style: none;
 }
 
+.list--inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style:none;
+
+  >li {
+    display:inline-block;
+    padding-right:5px;
+    padding-left:5px
+  }
+}
+
+
 // MISC
 hr {
   margin-bottom: modular-scale(1);
-  border: 0 none;
-  border-top: 1px solid rgba(#4a4a4a, .4);
+  border: 0;
+  border-top: 1px solid #e7e7e7;
 }
 
 blockquote {

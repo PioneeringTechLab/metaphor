@@ -1,6 +1,14 @@
 // HELPERS
 //
 
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
+
+.hide { display: none !important; }
+.show { display: block !important; }
+.invisible { visibility: hidden; }
+// .text-hide { @include text-hide; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -39,6 +47,10 @@
   height: auto;
 }
 
+.img--circle {
+  border-radius: 50%;
+}
+
 .type--hide {
   font: "0/0" a;
   color: transparent;
@@ -62,3 +74,7 @@
 }
 
 .cf { @include clearfix(); }
+
+.viewport-height{
+  min-height: 100vh;
+}

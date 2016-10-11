@@ -22,7 +22,9 @@
 
 // COMPONENTS
 @import "navigation";
+@import "navs";
 @import "buttons";
+@import "breadcrumbs";
 @import "forms";
 @import "panels";
 @import "alerts";
@@ -32,8 +34,10 @@
 @import "feature";
 @import "modals";
 @import "progress";
+@import "pagination";
 @import "accordion";
 @import "helpers";
 
 // THEME
+@import "theme/csun-footer";
 @import "theme/meta-footer";

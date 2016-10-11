@@ -1,0 +1,30 @@
+// PAGINATION
+//
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 modular-scale(0) 0;
+}
+.pagination li {
+  display: inline-block;
+  margin-right: 3px;
+}
+.pagination a,
+.pagination span {
+  display: block;
+  padding: 5px 12px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+.pagination li.disabled a,
+.pagination li.disabled span {
+  background-color: #e7e7e7;
+}
+.pagination li.active a,
+.pagination li.active span {
+  background-color: #d00d20;
+  border: 1px solid #d00d20;
+  color: #fff;
+}

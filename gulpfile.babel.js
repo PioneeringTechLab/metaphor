@@ -1,7 +1,7 @@
 'use strict';
 
-const elixir = require('laravel-elixir');
-let bowerPath = 'bower_components';
+import elixir from 'laravel-elixir';
+let bowerPath = './bower_components';
 
 elixir.config.assetsPath = 'src';
 elixir.config.publicPath = 'dist';
@@ -16,8 +16,9 @@ elixir((mix) => {
     'vendor/jquery.js',
     'vendor/datepicker.js',
     'components/accordion.js',
-    'scripts.js'
+    'scripts.js',
   ],'dist/js/metaphor.js');
 
+  // mix.webpack('metaphor.js');
   mix.sass('metaphor.scss');
 });
