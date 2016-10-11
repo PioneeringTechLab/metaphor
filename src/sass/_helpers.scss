@@ -7,7 +7,7 @@
 .hide { display: none !important; }
 .show { display: block !important; }
 .invisible { visibility: hidden; }
-.text-hide { @include text-hide; }
+// .text-hide { @include text-hide; }
 
 .sr-only {
   position: absolute;
@@ -74,3 +74,7 @@
 }
 
 .cf { @include clearfix(); }
+
+.viewport-height{
+  min-height: 100vh;
+}

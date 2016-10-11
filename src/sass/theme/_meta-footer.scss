@@ -11,6 +11,7 @@
   z-index: 0;
   min-height: 130px;
   background-color: #1a1919;
+  color: #979797;
 
   @media (min-width: map-get($grid-breakpoints, "sm")) {
     min-height: 85px;

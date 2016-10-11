@@ -1,0 +1,34 @@
+// BREADCRUMBS
+//
+.breadcrumbs {
+  list-style: none;
+  margin: 0 0 modular-scale(0) 0;
+  padding: 5px 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  &--underlined {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.breadcrumb__item {
+  display: inline-block;
+
+  &:not(&--home) {
+    &::before {
+      content: "›";
+      padding: 0 5px;
+    }
+  }
+
+  &--active {
+    color: red;
+  }
+
+  &--home {
+    color: red;
+  }
+}

@@ -64,11 +64,11 @@
 
           <p class="header--sm"><strong>Components:</strong></p>
           <ul class="nav">
-            <li class="nav__item nav__item--active"><a class="nav__link" href="grid.html">Grid System</a></li>
+            <li class="nav__item"><a class="nav__link" href="grid.html">Grid System</a></li>
             <li class="nav__item"><a class="nav__link" href="type.html">Typography</a></li>
             <li class="nav__item"><a class="nav__link" href="nav.html">Nav</a></li>
             <li class="nav__item"><a class="nav__link" href="buttons.html">Buttons</a></li>
-            <li class="nav__item"><a class="nav__link" href="panels.html">Panels</a></li>
+            <li class="nav__item nav__item--active"><a class="nav__link" href="panels.html">Panels</a></li>
             <li class="nav__item"><a class="nav__link" href="alerts.html">Alerts</a></li>
             <li class="nav__item"><a class="nav__link" href="lists.html">Lists</a></li>
             <li class="nav__item"><a class="nav__link" href="tables.html">Tables</a></li>
@@ -83,64 +83,53 @@
             <a href="#" class="alert__close" data-alert-close>&times;</a>
           </div>
 
-          <h2 class="type--header type--thin">Grid System</h2>
-          <p>Using <code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> you can modify the grid system to adjust on small, medium, or large devices.</p>
-
-          <style>
-            .grid-example > .col--outline {
-              border: 2px solid rgba(216, 210, 196, 1);
-              border-radius: 3px;
-              padding: 6px;
-              text-align: center;
-              font-weight: bold;
-              margin-bottom: 5px;
-            }
-          </style>
-
-          <div class="grid-example cf">
-            <div class="col--outline col-sm-2">1</div>
-            <div class="col--outline col-sm-10">2</div>
-            <div class="col--outline col-sm-4">3</div>
-            <div class="col--outline col-sm-8">4</div>
-            <div class="col--outline col-sm-6">5</div>
-            <div class="col--outline col-sm-6">6</div>
-            <div class="col--outline col-sm-8">7</div>
-            <div class="col--outline col-sm-4">8</div>
-            <div class="col--outline col-sm-10">9</div>
-            <div class="col--outline col-sm-2">10</div>
+          <h2 class="type--header type--thin">Panels</h2>
+          <div class="panel">
+            <div class="panel__content">This is a basic panel</div>
           </div>
-
+          <div class="panel">
+            <div class="panel__content">This is a basic panel w/ a footer</div>
+            <div class="panel__footer"><strong>Pro Tip!</strong> Smiling Makes Others Smile :)</div>
+          </div>
+          <div class="panel">
+            <div class="panel__header">
+              <strong>Panel</strong>
+            </div>
+            <div class="panel__content">This is a basic panel w/ a header</div>
+          </div>
+          <div class="panel panel--red">
+            <div class="panel__header">
+              <strong>Panel Alert</strong>
+            </div>
+            <div class="panel__content">This is a basic panel w/ a color modifier (options: red, cream, dark-gray)</div>
+            <div class="panel__footer"><strong>Warning:</strong> Are You Sure You Want To Do That?</div>
+          </div>
           <br>
+          <pre><code>&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel&lt;/div&gt;
+&lt;/div&gt;
 
-          <p>We recommend wrapping your grid inside a <code>.container</code> element to assist with content reflow.</p>
-          <pre><code>&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel w/ a footer&lt;/div&gt;
+  &lt;div class=&quot;panel__footer&quot;&gt;&lt;strong&gt;Pro Tip!&lt;/strong&gt; Smiling Makes Others Smile :)&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="type--gray">  &lt;!-- Your Code Here --&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-12&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;strong&gt;Panel&lt;/strong&gt;
   &lt;/div&gt;
-</div>
-&lt;/div&gt;</code></pre>
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel w/ a header&lt;/div&gt;
+&lt;/div&gt;
 
-          <br>
+&lt;div class=&quot;panel panel--red&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;strong&gt;Panel Alert&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel w/ a color modifier&lt;/div&gt;
+  &lt;div class=&quot;panel__footer&quot;&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Are You Sure You Want To Do That?&lt;/div&gt;
+&lt;/div&gt;</code></pre><br>
 
-          <p>When adding the grid system to your project wrap your columns in a <code>.row</code> element. The following example is a basic row of columns ( <code>.col-*-*</code> ) that automatically adjust to different device sizes:</p>
-          <div class="grid-example cf">
-            <div class="col--outline col-sm-12 col-md-1 col-lg-2 col-xl-4">1</div>
-            <div class="col--outline col-sm-12 col-md-3 col-lg-8 col-xl-4">2</div>
-            <div class="col--outline col-sm-12 col-md-8 col-lg-2 col-xl-4">3</div>
-          </div>
-
-          <p><small><em><strong>Note:</strong> You will need to resize your browser to view grid system changes.</em></small></p>
-
-          <pre><code>&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-sm-12 col-md-1 col-lg-2 col-xl-4&quot;&gt;1&lt;/div&gt;
-  &lt;div class=&quot;col-sm-12 col-md-3 col-lg-8 col-xl-4&quot;&gt;2&lt;/div&gt;
-  &lt;div class=&quot;col-sm-12 col-md-8 col-lg-2 col-xl-4&quot;&gt;3&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-          <br>
-
+        <br>
         </div>
       </div>
     </div>
