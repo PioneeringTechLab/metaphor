@@ -11,10 +11,18 @@
   margin-left: -1px;
   border-left: 1px solid transparent;
 
+  &:hover {
+    border-left: 1px solid #4a4a4a;
+  }
+
   &--active {
     font-weight: bold;
     color: $red;
     border-color: $red;
+
+    &:hover {
+      border-left: 1px solid $red;
+    }
   }
 
   &--fill .nav__link {

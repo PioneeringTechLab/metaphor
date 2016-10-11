@@ -19,13 +19,10 @@
     "src/sass/metaphor.scss"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "normalize-css": "^4.1.1",
-    "font-awesome": "fontawesome#^4.6.2",
-    "normalize-strings": "normalize#^1.0.4"
-  },
   "dependencies": {
-    "jquery": "^2.2.3",
-    "jquery-ui": "jquery.ui#^1.12.0"
+    "font-awesome": "^4.6.3",
+    "normalize-css": "^5.0.0",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1"
   }
 }

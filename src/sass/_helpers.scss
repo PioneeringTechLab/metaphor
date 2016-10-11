@@ -1,6 +1,14 @@
 // HELPERS
 //
 
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
+
+.hide { display: none !important; }
+.show { display: block !important; }
+.invisible { visibility: hidden; }
+.text-hide { @include text-hide; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -37,6 +45,10 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.img--circle {
+  border-radius: 50%;
 }
 
 .type--hide {
