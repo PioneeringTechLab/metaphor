@@ -3220,6 +3220,9 @@ pre {
   .section--bottomless {
     padding-bottom: 0; }
 
+.main {
+  min-height: calc(100vh - 243px); }
+
 .primary-nav {
   position: relative;
   z-index: 9999;
@@ -5034,5 +5037,8 @@ footer {
   @media (min-width: 544px) {
     .metalab-tagline {
       text-align: right; } }
+
+.main--metalab {
+  min-height: calc(100vh - 328px); }
 
 /*# sourceMappingURL=metaphor.css.map */

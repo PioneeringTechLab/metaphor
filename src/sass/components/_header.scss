@@ -1,12 +1,6 @@
 // HEADER
 //
 
-// .header {
-//   position: relative;
-//   z-index: 1;
-//   height: 100px;
-// }
-//
 .section {
   padding: 30px 0;
 
@@ -23,10 +17,14 @@
   }
 }
 
-//
-// .main {
-//   padding-top: 100px;
-//   margin-top: -100px;
+.main {
+  min-height: calc(100vh - 243px);
+}
+
+// .header {
+//   position: relative;
+//   z-index: 1;
+//   height: 100px;
 // }
 //
 // .main > .section-hero {
