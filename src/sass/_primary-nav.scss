@@ -19,6 +19,7 @@
   position: relative;
   height: 45px;
   text-align: center;
+  @include clearfix();
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     float: left;
@@ -26,13 +27,12 @@
 }
 
 .primary-nav__btn {
-  position: absolute;
-  top: 50%;
-  left: 0;
   display: block;
+  float: left;
   width: 20px;
   cursor: pointer;
-  transform: translateY(-50%);
+  padding: 15px 0;
+  margin-right: 15px;
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     display: none;
@@ -51,26 +51,36 @@
 }
 
 .primary-nav__brand {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 74px;
+  display: block;
+  float: left;
+  width: 73px;
   height: 20px;
   cursor: pointer;
   background-image: $csun-logo;
   background-repeat: no-repeat;
   background-size: 73px 20px;
-  transform: translate(-50%, -50%);
-
+  margin: 12px 0;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: $csun-logo-retina;
   }
+}
 
-  @media (min-width: map-get($grid-breakpoints, "lg")) {
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-  }
+.primary-nav__sub-brand {
+  display: block;
+  float: left;
+  cursor: pointer;
+  border-left: 1px solid #ccc;
+  text-decoration: none;
+  padding-left: 8px;
+  margin: 7px 0 7px 8px;
+  font-size: 18px;
+  color: #4a4a4a;
+  font-size: 20px;
+
+  // Explore This Further
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  // overflow: hidden;
 }
 
 .primary-nav__links {

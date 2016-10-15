@@ -18,11 +18,13 @@
 @import "base";
 @import "type";
 @import "code";
+@import "layouts";
 @import "grid";
 
 // COMPONENTS
-@import "navigation";
-@import "navs";
+@import "primary-nav";
+@import "sub-nav";
+@import "sidebar-nav";
 @import "buttons";
 @import "breadcrumbs";
 @import "forms";
@@ -39,5 +41,5 @@
 @import "helpers";
 
 // THEME
-@import "theme/csun-footer";
-@import "theme/meta-footer";
+@import "themes/csun-footer";
+@import "themes/meta-footer";
