@@ -28,11 +28,10 @@
 
 .primary-nav__btn {
   display: block;
-  float: left;
+  float: right;
   width: 20px;
   cursor: pointer;
   padding: 15px 0;
-  margin-right: 15px;
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     display: none;
@@ -76,11 +75,13 @@
   font-size: 18px;
   color: #4a4a4a;
   font-size: 20px;
+  font-family: $font-brand;
+  font-weight: 300;
 
   // Explore This Further
-  // text-overflow: ellipsis;
-  // white-space: nowrap;
-  // overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .primary-nav__links {

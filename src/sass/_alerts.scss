@@ -11,7 +11,7 @@
   color: rgba($grey, .9);
   text-decoration: none;
   user-select: none;
-  background-color: #fff;
+  background-color: $default;
   border-radius: $border-radius;
   outline: 0;
   transition: all .2s ease-in-out;
@@ -29,8 +29,7 @@
 
 .alert {
   // COLOR MODIFIERS
-  &--default { background-color: $default; }
-  &--info { background-color: $info; }
+  &--info { background-color: $azure; }
   &--success { background-color: $success; }
   &--warning { background-color: $warning; }
   &--danger { color: $white; background-color: $danger; }

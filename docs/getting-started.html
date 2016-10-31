@@ -5,14 +5,15 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Documentation | Metaphor by META+Lab</title>
+  <title>Getting Started | Docs | Metaphor by META+Lab</title>
   <meta name="description" content="Development Guidelines for Developers Implementing Metaphors UI Components.">
+  <link rel="icon" href="//www.csun.edu/sites/default/themes/csun/favicon.ico" type="image/x-icon">
 
   <!-- FONT LIBS -->
   <script src="//use.typekit.net/gfb2mjm.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
-  <link rel="stylesheet" href="../dist/css/metaphor.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+  <link rel="stylesheet" href="//cdn.metalab.csun.edu/metaphor/css/metaphor.css">
 </head>
 <body>
 
@@ -25,7 +26,7 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <a href="http://www.csun.edu" class="primary-nav__brand"><span class="sr-only">California State University, Northridge (CSUN)</span></a>
+          <a href="//www.csun.edu" class="primary-nav__brand"><span class="sr-only">California State University, Northridge (CSUN)</span></a>
           <a href="../index.html" class="primary-nav__sub-brand">Metaphor</a>
           <a class="sr-only" href="#main">Skip to main content</a>
         </div>
@@ -33,7 +34,7 @@
           <li><a href="../index.html" class="primary-nav__link">Home</a></li>
           <li><a href="vision.html" class="primary-nav__link active">Documentation</a></li>
           <li><a href="powered-by-metaphor.html" class="primary-nav__link">Powered-by Metaphor</a></li>
-          <li><a href="https://github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+          <li><a href="//github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
         </ul>
       </div>
     </nav>
@@ -43,6 +44,11 @@
       <div class="row">
         <div class="col-sm-12">
           <h1 class="type--white type--thin type--marginless">Documentation</h1>
+          <ul class="breadcrumbs breadcrumbs--marginless type--white">
+            <li class="breadcrumb__item breadcrumb__item--home"><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="breadcrumb__item">Intro</li>
+            <li class="breadcrumb__item">Getting Started</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -50,6 +56,11 @@
   <div class="main main--metalab section">
     <div class="container">
       <div class="row">
+        <div class="col-sm-12">
+          <div class="alert alert--warning"><strong>Heads Up!</strong> Components &amp; docs are subject to change until official v1.0 release.
+            <a href="#" class="alert__close" data-alert-close>&times;</a>
+          </div>
+        </div>
         <div class="col-sm-3">
           <p class="header--sm"><strong>Introduction:</strong></p>
           <ul class="nav">
@@ -67,6 +78,7 @@
           <ul class="nav">
             <li class="nav__item"><a class="nav__link" href="grid.html">Grid System</a></li>
             <li class="nav__item"><a class="nav__link" href="type.html">Typography</a></li>
+            <li class="nav__item"><a class="nav__link" href="breadcrumbs.html">Breadcrumbs</a></li>
             <li class="nav__item"><a class="nav__link" href="nav.html">Nav</a></li>
             <li class="nav__item"><a class="nav__link" href="buttons.html">Buttons</a></li>
             <li class="nav__item"><a class="nav__link" href="panels.html">Panels</a></li>
@@ -76,14 +88,10 @@
             <li class="nav__item"><a class="nav__link" href="forms.html">Forms</a></li>
             <li class="nav__item"><a class="nav__link" href="modals.html">Modals</a></li>
             <li class="nav__item"><a class="nav__link" href="accordion.html">Accordion</a></li>
+            <li class="nav__item"><a class="nav__link" href="helpers.html">Helpers</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-
-          <div class="alert alert--warning"><strong>Heads Up!</strong> Components &amp; docs are subject to change until official v1.0 release.
-            <a href="#" class="alert__close" data-alert-close>&times;</a>
-          </div>
-
           <h2 id="getting-started" class="type--header type--thin">Getting Started</h2>
           <p>The easiest way to try out Metaphor is by using our CDN and viewing the source code in our template <a href="examples.html">examples</a>. If you prefer downloading / installing from a package manager, check out the installation process below.</p>
 
@@ -98,16 +106,16 @@
 
           <h2 id="cdn" class="type--header type--thin">Metaphor CDN</h2>
           <p>Alternatively, you can also add Metaphor to your project with our Content Delivery Network (CDN).</p>
-          <pre><code><div class="type--gray">// CSS</div>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.metalab.csun.edu/metaphor/css/metaphor.css&quot;&gt;
+          <pre><code><div class="type--dark-gray">// CSS</div>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.metalab.csun.edu/metaphor/css/metaphor.css&quot;&gt;
 
-<div class="type--gray">// JavaScript</div>&lt;script src=&quot;https://cdn.metalab.csun.edu/metaphor/js/metaphor.js&quot;&gt;&lt;/script&gt;</code></pre>
+<div class="type--dark-gray">// JavaScript</div>&lt;script src=&quot;//cdn.metalab.csun.edu/metaphor/js/metaphor.js&quot;&gt;&lt;/script&gt;</code></pre>
           <p><small><em><strong>Note:</strong> You will need to add <a target="_blank" href="http://code.jquery.com">jQuery</a> to your project if you plan on using <code>metaphor.js</code></em></small></p>
 
           <br>
 
           <h2 id="template" class="type--header type--thin">Basic Template</h2>
           <p>Next add the following boilerplate code to your project:</p>
-          <pre><code><div class="type--gray">&lt;!DOCTYPE HTML&gt;
+          <pre><code><div class="type--dark-gray">&lt;!DOCTYPE HTML&gt;
 &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -115,18 +123,21 @@
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
     &lt;title&gt;Metaphor by META+LAB&lt;/title&gt;
   &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;//www.csun.edu/sites/default/themes/csun/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
 
+  &lt;!-- CSUN Branded Fonts --&gt;
   &lt;script src=&quot;//use.typekit.net/gfb2mjm.js&quot;&gt;&lt;/script&gt;
   &lt;script&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;
 
-</div>  &lt;link rel=&quot;stylesheet&quot; href=&quot;../project/path/to/metaphor.css&quot;&gt;
-<div class="type--gray">  &lt;link rel=&quot;stylesheet&quot; href=&quot;../your-personal-project/path/to/styles.css&quot;&gt;
+</div>  &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.metalab.csun.edu/metaphor/css/metaphor.css&quot;&gt;
+<div class="type--dark-gray">  &lt;link rel=&quot;stylesheet&quot; href=&quot;../your-personal-project/path/to/styles.css&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
+
   &lt;!-- Add Your Code Here &amp; Start Building ;D --&gt;
 
-</div>  &lt;script src=&quot;../project/path/to/metaphor.js&quot;&gt;&lt;/script&gt;
-<div class="type--gray">&lt;/body&gt;
+</div>  &lt;script src=&quot;//cdn.metalab.csun.edu/metaphor/js/metaphor.js&quot;&gt;&lt;/script&gt;
+<div class="type--dark-gray">&lt;/body&gt;
 &lt;/html&gt;</div></code></pre>
 
           <br>
@@ -134,7 +145,7 @@
           <h2 id="included" class="type--header type--thin">What's Included</h2>
           <p>When you download Metaphor via Bower, the following source files will be available to you</p>
 
-          <pre><code><div class="type--gray">Metaphor
+          <pre><code><div class="type--dark-gray">Metaphor
   ├── CONTRIBUTING.md
   ├── LICENSE
   ├── README.md
@@ -166,13 +177,13 @@
   			<div class="col-sm-5">
   				<div class="row">
   					<div class="col-sm-3 footer-seal">
-  						<img src="https://helix-demo.sandbox.csun.edu/imgs/footer-seal.png" alt="Seal for California State University, Northridge">
+  						<img src="//www.csun.edu/sites/default/themes/csun/images/footer-seal.png" alt="Seal for California State University, Northridge">
   					</div>
   					<div class="col-sm-9">
   						<ul class="list--unstyled">
-  							<li><strong>Faculty</strong> <br>© California State University, Northridge</li>
+  							<li><strong>META+LAB</strong> <br>© California State University, Northridge</li>
   							<li>18111 Nordhoff Street, Northridge, CA 91330</li>
-  							<li>Phone: (818) 677-1200 / <a href="http://www.csun.edu/contact/" target="_blank">Contact Us</a></li>
+  							<li>Phone: (818) 677-1200 / <a href="//www.csun.edu/contact/" target="_blank">Contact Us</a></li>
   						</ul>
   					</div>
   				</div>
@@ -181,20 +192,20 @@
   				<div class="row">
   					<div class="col-sm-4">
   						<ul class="list--unstyled">
-  							<li><a href="http://www.csun.edu/emergency/" target="_blank">Emergency Information</a></li>
-  							<li><a href="http://www.csun.edu/afvp/university-policies-procedures/" target="_blank">University Policies &amp; Procedures</a></li>
+  							<li><a href="//www.csun.edu/emergency/" target="_blank">Emergency Information</a></li>
+  							<li><a href="//www.csun.edu/afvp/university-policies-procedures/" target="_blank">University Policies &amp; Procedures</a></li>
   						</ul>
   					</div>
   					<div class="col-sm-4">
   						<ul class="list--unstyled">
-  							<li><a href="http://www.csun.edu/sites/default/files/900-12.pdf" target="_blank">Terms and Conditions for Use</a></li>
-  							<li><a href="http://www.csun.edu/sites/default/files/500-8025.pdf" target="_blank">Privacy Policy</a></li>
-  							<li><a href="http://www.csun.edu/it/document-viewers" target="_blank">Document Reader</a></li>
+  							<li><a href="//www.csun.edu/sites/default/files/900-12.pdf" target="_blank">Terms and Conditions for Use</a></li>
+  							<li><a href="//www.csun.edu/sites/default/files/500-8025.pdf" target="_blank">Privacy Policy</a></li>
+  							<li><a href="//www.csun.edu/it/document-viewers" target="_blank">Document Reader</a></li>
   						</ul>
   					</div>
   					<div class="col-sm-4">
   						<ul class="list--unstyled">
-  							<li><a href="http://www.calstate.edu/" target="_blank">California State University</a></li>
+  							<li><a href="//www.calstate.edu/" target="_blank">California State University</a></li>
   						</ul>
   					</div>
   				</div>
@@ -208,9 +219,9 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="metalab-branding">
-              <img src="http://www.csun.edu/faculty/imgs/meta-logo-horz.png" alt="CSUN META Lab Logo">
+              <img src="//www.csun.edu/faculty/imgs/meta-logo-horz.png" alt="CSUN META Lab Logo">
               <ul class="list--unstyled">
-                <li><a href="http://metalab.csun.edu">metalab.csun.edu</a></li>
+                <li><a href="//metalab.csun.edu">metalab.csun.edu</a></li>
               </ul>
             </div>
           </div>
@@ -225,7 +236,7 @@
   </div>
 
   <!-- SCRIPTS -->
-  <script src="../dist/js/metaphor.js"></script>
+  <script src="//cdn.metalab.csun.edu/metaphor/js/metaphor.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

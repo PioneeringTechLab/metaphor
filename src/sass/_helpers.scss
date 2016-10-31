@@ -47,9 +47,10 @@
   height: auto;
 }
 
-.img--circle {
-  border-radius: 50%;
-}
+.img--circle { border-radius: 50%; }
+.img--border { border: 1px solid #ccc; }
+.img--hexagon { clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%); }
+
 
 .type--hide {
   font: "0/0" a;
@@ -59,13 +60,28 @@
   border: 0;
 }
 
-// COLORS
-.type--white { color: #fff; }
+// TYPE COLORS
 .type--red { color: $red; }
-.type--cream { color: $cream; }
-.type--gray { color: #666; }
+.type--white { color: $white; }
+.type--black { color: $black; }
+.type--dark-gray { color: $dark-gray; }
+.type--gray { color: $gray }
+.type--light-gray { color: $light-gray; }
 
-.bg--light-gray { background-color: #f7f7f7; }
+// BACKGROUND COLORS
+.bg--red { background-color: $red; }
+.bg--white { background-color: $white; }
+.bg--black { background-color: $black; }
+.bg--dark-gray { background-color: $dark-gray; }
+.bg--gray { background-color: $gray }
+.bg--light-gray { background-color: $light-gray; }
+.bg--sea-green { background-color: $sea-green; }
+.bg--periwinkle { background-color: $periwinkle; }
+.bg--golden-yellow { background-color: $golden-yellow; }
+.bg--azure { background-color: $azure; }
+.bg--iris { background-color: $iris; }
+.bg--cream { background-color: $cream; }
+.bg--scarlet { background-color: $scarlet; }
 
 .header--sm {
   font-size: 15px;

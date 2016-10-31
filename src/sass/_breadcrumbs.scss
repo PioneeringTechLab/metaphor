@@ -3,7 +3,7 @@
 .breadcrumbs {
   list-style: none;
   margin: 0 0 modular-scale(0) 0;
-  padding: 5px 0;
+  padding: 0;
 
   a {
     text-decoration: none;
@@ -11,6 +11,10 @@
 
   &--underlined {
     border-bottom: 1px solid #ccc;
+  }
+
+  &--marginless {
+    margin: 0;
   }
 }
 
