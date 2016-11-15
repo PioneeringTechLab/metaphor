@@ -52,11 +52,18 @@
   });
 
   // Close Alerts
-  var closeLinks = $('a[data-alert-close]');
+  var closeLinks = $('*[data-alert-close]');
   closeLinks.on('click', closeHandleMethod);
 
   function closeHandleMethod(e) {
     e.preventDefault();
     $(this).parent().hide();
   }
+
+// Close Tag
+$('.tag--close').on('click', function(e){
+  e.preventDefault();
+  $(this).hide();
+});
+
 })(jQuery);
