@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Lists | Docs | Metaphor by META+Lab</title>
+  <title>Tags | Docs | Metaphor by META+Lab</title>
   <meta name="description" content="Development Guidelines for Developers Implementing Metaphors UI Components.">
 <link rel="icon" href="//www.csun.edu/sites/default/themes/csun/favicon.ico" type="image/x-icon">
 
@@ -47,7 +47,7 @@
           <ul class="breadcrumbs breadcrumbs--marginless type--white">
             <li class="breadcrumb__item breadcrumb__item--home"><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li class="breadcrumb__item">Components</li>
-            <li class="breadcrumb__item">Lists</li>
+            <li class="breadcrumb__item">Tags</li>
           </ul>
         </div>
       </div>
@@ -81,10 +81,10 @@
             <li class="nav__item"><a class="nav__link" href="breadcrumbs.html">Breadcrumbs</a></li>
             <li class="nav__item"><a class="nav__link" href="nav.html">Nav</a></li>
             <li class="nav__item"><a class="nav__link" href="buttons.html">Buttons</a></li>
-            <li class="nav__item"><a class="nav__link" href="tags.html">Tags</a></li>
+            <li class="nav__item nav__item--active"><a class="nav__link" href="tags.html">Tags</a></li>
             <li class="nav__item"><a class="nav__link" href="panels.html">Panels</a></li>
             <li class="nav__item"><a class="nav__link" href="alerts.html">Alerts</a></li>
-            <li class="nav__item nav__item--active"><a class="nav__link" href="lists.html">Lists</a></li>
+            <li class="nav__item"><a class="nav__link" href="lists.html">Lists</a></li>
             <li class="nav__item"><a class="nav__link" href="tables.html">Tables</a></li>
             <li class="nav__item"><a class="nav__link" href="forms.html">Forms</a></li>
             <li class="nav__item"><a class="nav__link" href="modals.html">Modals</a></li>
@@ -94,45 +94,39 @@
           </ul>
         </div>
         <div class="col-sm-9">
-          <h2 class="type--header type--thin">Lists</h2>
-          <p>When using lists ( <code>&lt;ul&gt;</code> ), you can add custom modifiers to change their layout.</p>
-          <div class="row">
-            <div class="col-sm-4">
-              <ul class="list">
-                <li class="list__item"><a href="#">Side Nav Link</a></li>
-                <li class="list__item"><a href="#">Side Nav Link</a></li>
-                <li class="list__item"><a href="#">Side Nav Link</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-4">
-              <ul class="list list--arrows list--hover">
-                <li class="list__item"><a href="#">Side Nav Link</a></li>
-                <li class="list__item"><a href="#">Side Nav Link</a></li>
-                <li class="list__item"><a href="#">Side Nav Link</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-4">
-              <ul class="list list--underlined">
-                <li><a href="#">Nav Link List</a></li>
-                <li><a href="#">Nav Link List</a></li>
-                <li><a href="#">Nav Link List</a></li>
-              </ul>
-            </div>
+          <h2 class="type--header type--thin">Tags</h2>
+          <div>
+            <span>Tag Cloud: </span>
+            <span class="tag tag--close">When</span>
+            <span class="tag tag--close">A</span>
+            <span class="tag tag--close">Problem</span>
+            <span class="tag tag--close">Comes</span>
+            <span class="tag tag--close">Along</span>
+            <span class="tag tag--close">You</span>
+            <span class="tag tag--close">Must</span>
+            <span class="tag tag--close">Whip It</span>
           </div>
-          <br>
-          <pre><code>&lt;ul class=&quot;list&quot;&gt;
-  &lt;li class=&quot;list__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Side Nav Link&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;list__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Side Nav Link&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;list__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Side Nav Link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+          <div>
+            <span>Status: </span>
+            <a href="#" class="tag tag--success">Approved</a>
+            <a href="#" class="tag tag--warning">Pending</a>
+            <a href="#" class="tag tag--danger">Error</a>
+          </div>
+          <pre><code>&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;tag tag--success&quot;&gt;Approved&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;tag tag--warning&quot;&gt;Pending&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;tag tag--danger&quot;&gt;Error&lt;/a&gt;
 
-<div class="type--dark-gray"><strong>// LIST MODIFIERS</strong>
-.list--arrows
-.list--hover
-.list--underlined
-</div>
-</code></pre><br>
+<div class="type--dark-gray"><strong>// TAG MODIFIERS</strong>
+<strong>Tag Actions:</strong>
+.tag--close
 
+<strong>Tag Colors:</strong>
+.tag--success
+.tag--warning
+.tag--danger
+</div></code></pre>
+        <p><small><em><strong>Note:</strong> You can use <code>&lt;span&gt;</code> or <code>&lt;a&gt;</code> elements. The only difference is anchor tags include styling for cursors.</em></small></p>
         <br>
         </div>
       </div>
