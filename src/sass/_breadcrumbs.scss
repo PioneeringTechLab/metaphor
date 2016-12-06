@@ -1,9 +1,9 @@
 // BREADCRUMBS
 //
 .breadcrumbs {
-  list-style: none;
-  margin: 0 0 modular-scale(0) 0;
   padding: 0;
+  margin: 0 0 modular-scale(0);
+  list-style: none;
 
   a {
     text-decoration: none;
@@ -23,16 +23,16 @@
 
   &:not(&--home) {
     &::before {
-      content: "›";
       padding: 0 5px;
+      content: "›";
     }
   }
 
   &--active {
-    color: red;
+    color: $red;
   }
 
   &--home {
-    color: red;
+    color: $red;
   }
 }

@@ -1,6 +1,8 @@
 'use strict';
 
 import elixir from 'laravel-elixir';
+import 'laravel-elixir-scss-lint';
+
 let bowerPath = './bower_components';
 
 elixir.config.assetsPath = 'src';
@@ -20,5 +22,6 @@ elixir((mix) => {
   ],'dist/js/metaphor.js');
 
   // mix.webpack('metaphor.js');
+  mix.scssLint();
   mix.sass('metaphor.scss');
 });

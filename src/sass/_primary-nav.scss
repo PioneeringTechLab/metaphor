@@ -30,8 +30,8 @@
   display: block;
   float: right;
   width: 20px;
-  cursor: pointer;
   padding: 15px 0;
+  cursor: pointer;
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     display: none;
@@ -54,11 +54,11 @@
   float: left;
   width: 73px;
   height: 20px;
+  margin: 12px 0;
   cursor: pointer;
   background-image: $csun-logo;
   background-repeat: no-repeat;
   background-size: 73px 20px;
-  margin: 12px 0;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: $csun-logo-retina;
   }
@@ -67,21 +67,18 @@
 .primary-nav__sub-brand {
   display: block;
   float: left;
-  cursor: pointer;
-  border-left: 1px solid #ccc;
-  text-decoration: none;
   padding-left: 8px;
   margin: 7px 0 7px 8px;
-  font-size: 18px;
-  color: #4a4a4a;
-  font-size: 20px;
+  overflow: hidden; // Explore This Further
   font-family: $font-brand;
+  font-size: 20px;
   font-weight: 300;
-
-  // Explore This Further
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  color: #4a4a4a;
+  text-decoration: none;
+  text-overflow: ellipsis; // Explore This Further
+  white-space: nowrap; // Explore This Further
+  cursor: pointer;
+  border-left: 1px solid #ccc;
 }
 
 .primary-nav__links {
