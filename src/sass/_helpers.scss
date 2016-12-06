@@ -7,7 +7,6 @@
 .hide { display: none !important; }
 .show { display: block !important; }
 .invisible { visibility: hidden; }
-// .text-hide { @include text-hide; }
 
 .sr-only {
   position: absolute;
@@ -65,7 +64,7 @@
 .type--white { color: $white; }
 .type--black { color: $black; }
 .type--dark-gray { color: $dark-gray; }
-.type--gray { color: $gray }
+.type--gray { color: $gray; }
 .type--light-gray { color: $light-gray; }
 
 // BACKGROUND COLORS
@@ -73,7 +72,7 @@
 .bg--white { background-color: $white; }
 .bg--black { background-color: $black; }
 .bg--dark-gray { background-color: $dark-gray; }
-.bg--gray { background-color: $gray }
+.bg--gray { background-color: $gray; }
 .bg--light-gray { background-color: $light-gray; }
 .bg--sea-green { background-color: $sea-green; }
 .bg--periwinkle { background-color: $periwinkle; }
@@ -91,6 +90,6 @@
 
 .cf { @include clearfix(); }
 
-.viewport-height{
+.viewport-height {
   min-height: 100vh;
 }

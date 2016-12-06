@@ -4,17 +4,17 @@
 .tag {
   display: inline-block;
   padding: 4px 8px;
-  font-weight: bold;
+  margin-bottom: modular-scale(-2);
   font-size: modular-scale(-1);
+  font-weight: bold;
   line-height: 1;
   color: rgba($grey, .9);
   text-align: center;
+  text-decoration: none;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: $border-radius;
   background-color: $default;
-  margin-bottom: modular-scale(-2);
-  text-decoration: none;
+  border-radius: $border-radius;
 
   &--info { background-color: $azure; }
   &--success { color: #fff; background-color: $success; }
@@ -28,12 +28,12 @@
 }
 
 .tag--close::after {
-  content: "\00d7";
-  font-size: modular-scale(-1);
-  color: inherit;
   padding-left: 6px;
+  font-size: modular-scale(-1);
   font-weight: normal;
   line-height: 1;
+  color: inherit;
+  content: "\00d7";
 }
 
 // Add hover effects, but only for links
