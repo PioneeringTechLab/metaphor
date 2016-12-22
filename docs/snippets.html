@@ -5,9 +5,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Getting Started | Docs | Metaphor by META+Lab</title>
+  <title>Text Editor Snippets | Docs | Metaphor by META+Lab</title>
   <meta name="description" content="Development Guidelines for Developers Implementing Metaphors UI Components.">
-  <link rel="icon" href="//www.csun.edu/sites/default/themes/csun/favicon.ico" type="image/x-icon">
+<link rel="icon" href="//www.csun.edu/sites/default/themes/csun/favicon.ico" type="image/x-icon">
 
   <!-- FONT LIBS -->
   <script src="//use.typekit.net/gfb2mjm.js"></script>
@@ -46,8 +46,8 @@
           <h1 class="type--white type--thin type--marginless">Documentation</h1>
           <ul class="breadcrumbs breadcrumbs--marginless type--white">
             <li class="breadcrumb__item breadcrumb__item--home"><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-            <li class="breadcrumb__item">Intro</li>
-            <li class="breadcrumb__item">Getting Started</li>
+            <li class="breadcrumb__item">Tools</li>
+            <li class="breadcrumb__item">Text Editor Snippets</li>
           </ul>
         </div>
       </div>
@@ -65,7 +65,7 @@
           <p class="header--sm"><strong>Introduction:</strong></p>
           <ul class="nav">
             <li class="nav__item"><a class="nav__link" href="vision.html">Our Vision</a></li>
-            <li class="nav__item nav__item--active"><a class="nav__link" href="getting-started.html">Getting Started</a></li>
+            <li class="nav__item"><a class="nav__link" href="getting-started.html">Getting Started</a></li>
             <li class="nav__item"><a class="nav__link" href="examples.html">Examples</a></li>
             <li class="nav__item"><a class="nav__link" href="contributing.html">Contributing</a></li>
             <li class="nav__item"><a class="nav__link" href="code-standards.html">Code Standards</a></li>
@@ -93,90 +93,31 @@
             <li class="nav__item"><a class="nav__link" href="helpers.html">Helpers</a></li>
           </ul>
 
-
           <br><hr><br>
 
           <p class="header--sm"><strong>Tools:</strong></p>
           <ul class="nav">
-              <li class="nav__item nav__item"><a class="nav__link" href="snippets.html">Text Editor Snippets</a></li>
+              <li class="nav__item nav__item--active"><a class="nav__link" href="snippets.html">Text Editor Snippets</a></li>
           </ul>
-          
         </div>
         <div class="col-sm-9">
-          <h2 id="getting-started" class="type--header type--thin">Getting Started</h2>
-          <p>The easiest way to try out Metaphor is by using our CDN and viewing the source code in our template <a href="examples.html">examples</a>. If you prefer downloading / installing from a package manager, check out the installation process below.</p>
+
+          <h2 id="st3" class="type--header type--thin">Sublime Text - Snippet Package</h2>
+          <p>Development using Metaphor is now even easier with our new Sublime Text Snippet Package. You can now on the fly use pre-built components to make your development a breeze and make use of all custom classes and modifiers made present by Metaphor.</p>
 
           <br>
 
-          <h2 id="installation" class="type--header type--thin">Installation</h2>
-          <p>To include Metaphor in your next project simply run  the following in the command line: </p>
-          <pre><code>$ bower install metaphor --save</code></pre>
-          <p><small><em><strong>Note:</strong> If you haven't already you will need to install <a target="_blank" href="https://nodejs.org/en/download">Node/NPM</a> &amp; <a target="_blank" href="https://bower.io/#install-bower">Bower</a> first.</em></small></p>
-
+          <h2 id="install-guide" class="type--header type--thin">Installation Guide</h2>
+          <h3>With Package Control</h3>
+          <p>The easiest way to install is through <a href="http://wbond.net/sublime_packages/package_control/installation">Package Control</a></p>
+          <p>Once you install Package Control, restart Sublime Text, bring up the Command Palette (<code>Command+Shift+P</code> on OS X, <code>Control+Shift+P</code> on Linux/Windows). Select "Package Control: Install Package", then select <a href="https://github.com/csun-metalab/metaphor-snippets">Metaphor-Snippets</a>. This method will automatically keep Metaphor Sublime Package up to date.</p>
+          <h3>Manual Installation</h3>
+          <ol>
+            <li>Download "MetaphorSnippets" folder</li>
+            <li>Go to your packages (in Sublime : Preferences > Browse Packages...)</li>
+            <li>Copy the folder "MetaphorSnippets" in this folder</li>
+          </ol>
           <br>
-
-          <h2 id="cdn" class="type--header type--thin">Metaphor CDN</h2>
-          <p>Alternatively, you can also add Metaphor to your project with our Content Delivery Network (CDN).</p>
-          <pre><code><div class="type--dark-gray">// CSS</div>&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.metalab.csun.edu/metaphor/css/metaphor.css&quot;&gt;
-
-<div class="type--dark-gray">// JavaScript</div>&lt;script src=&quot;//cdn.metalab.csun.edu/metaphor/js/metaphor.js&quot;&gt;&lt;/script&gt;</code></pre>
-          <p><small><em><strong>Note:</strong> You will need to add <a target="_blank" href="http://code.jquery.com">jQuery</a> to your project if you plan on using <code>metaphor.js</code></em></small></p>
-
-          <br>
-
-          <h2 id="template" class="type--header type--thin">Basic Template</h2>
-          <p>Next add the following boilerplate code to your project:</p>
-          <pre><code><div class="type--dark-gray">&lt;!DOCTYPE HTML&gt;
-&lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Metaphor by META+LAB&lt;/title&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
-  &lt;link rel=&quot;icon&quot; href=&quot;//www.csun.edu/sites/default/themes/csun/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
-
-  &lt;!-- CSUN Branded Fonts --&gt;
-  &lt;script src=&quot;//use.typekit.net/gfb2mjm.js&quot;&gt;&lt;/script&gt;
-  &lt;script&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;
-
-</div>  &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.metalab.csun.edu/metaphor/css/metaphor.css&quot;&gt;
-<div class="type--dark-gray">  &lt;link rel=&quot;stylesheet&quot; href=&quot;../your-personal-project/path/to/styles.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-  &lt;!-- Add Your Code Here &amp; Start Building ;D --&gt;
-
-</div>  &lt;script src=&quot;//cdn.metalab.csun.edu/metaphor/js/metaphor.js&quot;&gt;&lt;/script&gt;
-<div class="type--dark-gray">&lt;/body&gt;
-&lt;/html&gt;</div></code></pre>
-
-          <br>
-
-          <h2 id="included" class="type--header type--thin">What's Included</h2>
-          <p>When you download Metaphor via Bower, the following source files will be available to you</p>
-
-          <pre><code><div class="type--dark-gray">Metaphor
-  ├── CONTRIBUTING.md
-  ├── LICENSE
-  ├── README.md
-  ├── bower.json
-  ├── dist/
-  │   ├── css/
-  │   │   └── metaphor.css
-  │   ├── fonts/
-  │   └── js/
-  │       └── metaphor.js
-  ├── docs/
-  ├── examples/
-  ├── gulpfile.js
-  ├── index.html
-  ├── package.json
-  └── src/
-      ├── js/
-      └── sass/
-</div></code></pre>
-
 
         </div>
       </div>
