@@ -5921,6 +5921,7 @@ input[type="button"].btn-block {
   line-height: 1;
   color: inherit;
   content: "\00d7";
+  cursor: pointer;
 }
 
 a.tag:focus, a.tag:hover {
