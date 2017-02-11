@@ -4488,7 +4488,7 @@ pre code {
 
 .primary-nav {
   position: relative;
-  z-index: 9999;
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(74, 74, 74, 0.1);
 }
@@ -6480,7 +6480,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal__outer.modal--show {
-  z-index: 100;
+  z-index: 200;
   opacity: 1;
 }
 

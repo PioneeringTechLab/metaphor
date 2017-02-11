@@ -16,7 +16,7 @@
   transition: all .5s ease;
 
   &.modal--show {
-    z-index: 100;
+    z-index: 200;
     opacity: 1;
 
     .modal {
