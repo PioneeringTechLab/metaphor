@@ -2,8 +2,8 @@
 //
 
 .tag {
-  display: inline-block;
-  padding: 4px 8px;
+  display: inline;
+  padding: 2px 6px;
   margin-bottom: modular-scale(-2);
   font-size: modular-scale(-1);
   font-weight: bold;
@@ -12,14 +12,18 @@
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: middle;
   background-color: $default;
   border-radius: $border-radius;
+  border: 1px solid #e7e7e7;
 
-  &--info { background-color: $azure; }
-  &--success { color: #fff; background-color: $success; }
-  &--warning { background-color: $warning; }
-  &--danger { color: #fff; background-color: $danger; }
+  &--info { background-color: $azure; border-color: $azure; }
+  &--success { color: #fff; background-color: $success; border-color: $success; }
+  &--warning { background-color: $warning; border-color: $warning; }
+  &--danger { color: #fff; background-color: $danger; border-color: $danger; }
+
+  &--default-outline { border: 1px solid #fff; color: #fff; background-color: transparent; }
+  &--danger-outline { background: #fff; border: 1px solid #d00d2d; color: #d00d2d; }
 
   // Empty tags collapse automatically
   &:empty {

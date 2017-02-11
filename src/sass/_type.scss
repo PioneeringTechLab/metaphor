@@ -73,15 +73,17 @@ p, ul, ol, pre, code {
   font-weight: 300;
 }
 
-p a {
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p a,
+ul a,
+ol a {
   color: $red;
   cursor: pointer;
   text-decoration: underline;
-}
-
-a {
-  color: #4a4a4a;
-  text-decoration: none;
 }
 
 // LISTS
@@ -98,12 +100,14 @@ ul, ol { line-height: 1.6; }
   margin-left: -5px;
   list-style: none;
 
-  >li {
+  > li {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
   }
 }
+
+.list--padded li { margin-bottom: 5px; }
 
 // MISC
 hr {
@@ -132,3 +136,4 @@ blockquote {
 .type--italic { font-style: italic; }
 .type--marginless { margin: 0; }
 .type--uppercase { text-transform: uppercase; letter-spacing: 2px; }
+.type--link { text-decoration: none; color: $red; }
