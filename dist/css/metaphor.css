@@ -3422,15 +3422,17 @@ p, ul, ol, pre, code {
   font-weight: 300;
 }
 
-p a {
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p a,
+ul a,
+ol a {
   color: #d00d2d;
   cursor: pointer;
   text-decoration: underline;
-}
-
-a {
-  color: #4a4a4a;
-  text-decoration: none;
 }
 
 ul {
@@ -3456,6 +3458,10 @@ ul, ol {
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.list--padded li {
+  margin-bottom: 5px;
 }
 
 hr {
@@ -3513,6 +3519,11 @@ blockquote {
 .type--uppercase {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.type--link {
+  text-decoration: none;
+  color: #d00d2d;
 }
 
 code,
@@ -4477,7 +4488,7 @@ pre code {
 
 .primary-nav {
   position: relative;
-  z-index: 9999;
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(74, 74, 74, 0.1);
 }
@@ -5849,8 +5860,8 @@ input[type="button"].btn-block {
 }
 
 .tag {
-  display: inline-block;
-  padding: 4px 8px;
+  display: inline;
+  padding: 2px 6px;
   margin-bottom: 0.6944444444rem;
   font-size: 0.8333333333rem;
   font-weight: bold;
@@ -5859,27 +5870,44 @@ input[type="button"].btn-block {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: middle;
   background-color: #e7e7e7;
   border-radius: 3px;
+  border: 1px solid #e7e7e7;
 }
 
 .tag--info {
   background-color: #2ca5da;
+  border-color: #2ca5da;
 }
 
 .tag--success {
   color: #fff;
   background-color: #13bf63;
+  border-color: #13bf63;
 }
 
 .tag--warning {
   background-color: #fdd64d;
+  border-color: #fdd64d;
 }
 
 .tag--danger {
   color: #fff;
   background-color: #d00d2d;
+  border-color: #d00d2d;
+}
+
+.tag--default-outline {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.tag--danger-outline {
+  background: #fff;
+  border: 1px solid #d00d2d;
+  color: #d00d2d;
 }
 
 .tag:empty {
@@ -5893,6 +5921,7 @@ input[type="button"].btn-block {
   line-height: 1;
   color: inherit;
   content: "\00d7";
+  cursor: pointer;
 }
 
 a.tag:focus, a.tag:hover {
@@ -6451,7 +6480,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal__outer.modal--show {
-  z-index: 100;
+  z-index: 200;
   opacity: 1;
 }
 
