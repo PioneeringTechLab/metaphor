@@ -6012,7 +6012,7 @@ textarea {
 
 .panel {
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(74, 74, 74, 0.4);
+  border: 1px solid rgba(74, 74, 74, 0.3);
   border-radius: 3px;
 }
 
@@ -6043,6 +6043,16 @@ textarea {
 
 .panel__header h1, .panel__header h2, .panel__header h3, .panel__header h4, .panel__header h5, .panel__header h6 {
   margin-bottom: 0;
+}
+
+.panel__img {
+  background-color: #e7e7e7;
+  display: block;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .panel__content {
