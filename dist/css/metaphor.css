@@ -6561,6 +6561,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -1px;
 }
 
+.tabs::before, .tabs::after {
+  display: table;
+  content: " ";
+}
+
+.tabs::after {
+  clear: both;
+}
+
 .tab__list {
   display: inline-block;
   margin-left: -4px;
