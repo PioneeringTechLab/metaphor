@@ -5883,8 +5883,8 @@ input[type="button"].btn-block {
 
 .tag--success {
   color: #fff;
-  background-color: #13bf63;
-  border-color: #13bf63;
+  background-color: #209200;
+  border-color: #209200;
 }
 
 .tag--warning {
@@ -6100,7 +6100,7 @@ textarea {
 }
 
 .alert--success {
-  background-color: #13bf63;
+  background-color: #209200;
 }
 
 .alert--warning {
