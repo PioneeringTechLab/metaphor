@@ -4508,6 +4508,7 @@ pre code {
 .primary-nav__mobile {
   position: relative;
   height: 45px;
+  padding: 0px 5px 0px 5px;
   text-align: center;
 }
 
@@ -4585,7 +4586,7 @@ pre code {
 
 .primary-nav__links {
   display: none;
-  padding: 0;
+  padding: 0px 5px 0px 5px;
   margin: 0;
   text-align: center;
   list-style: none;
@@ -4617,7 +4618,7 @@ pre code {
 
 .primary-nav__link {
   display: block;
-  padding: 5px 0;
+  padding: 5px 0px;
   font-size: 14px;
   color: #4a4a4a;
   text-decoration: none;
