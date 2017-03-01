@@ -40,6 +40,7 @@
   border: 0;
 }
 
+// IMAGE STYLING
 .img--fluid {
   display: block;
   max-width: 100%;
@@ -50,7 +51,7 @@
 .img--border { border: 1px solid #ccc; }
 .img--hexagon { clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%); }
 
-
+// TYPE HIDDEN
 .type--hide {
   font: "0/0" a;
   color: transparent;
@@ -88,8 +89,19 @@
   letter-spacing: 1px;
 }
 
-.cf { @include clearfix(); }
-
 .viewport-height {
   min-height: 100vh;
+}
+
+// CLEARFIX
+.cf { @include clearfix(); }
+
+// GRID STYLING
+.grid--outline .col--outline {
+  border: 2px solid rgba(216, 210, 196, 1);
+  border-radius: 3px;
+  padding: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
 }

@@ -6902,6 +6902,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
+.viewport-height {
+  min-height: 100vh;
+}
+
 .cf::before, .cf::after {
   display: table;
   content: " ";
@@ -6911,8 +6915,13 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-.viewport-height {
-  min-height: 100vh;
+.grid--outline .col--outline {
+  border: 2px solid #d8d2c4;
+  border-radius: 3px;
+  padding: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 footer {
