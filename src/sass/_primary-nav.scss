@@ -8,8 +8,8 @@
   @include clearfix();
   position: relative;
   z-index: 100;
-  background-color: rgba(#fff, .95);
-  border-bottom: 1px solid rgba(#4a4a4a, .1);
+  background-color: rgba($white, .95);
+  border-bottom: 1px solid rgba($grey, .1);
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     border-bottom: 0;
   }
@@ -79,12 +79,12 @@
   font-family: $font-brand;
   font-size: 20px;
   font-weight: 300;
-  color: #4a4a4a;
+  color: $grey;
   text-decoration: none;
   text-overflow: ellipsis; // Explore This Further
   white-space: nowrap; // Explore This Further
   cursor: pointer;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid $iron;
 }
 
 .primary-nav__links {
@@ -118,7 +118,7 @@
   display: block;
   padding: 5px 0px;
   font-size: 14px;
-  color: #4a4a4a;
+  color: $grey;
   text-decoration: none;
 
   &:hover {
@@ -126,7 +126,7 @@
   }
 
   &.active {
-    color: #fff;
+    color: $white;
     background-color: $red;
     border-radius: 3px;
   }
@@ -159,11 +159,11 @@
   background-color: rgba($black, .9);
 
   .bar {
-    background-color: #fff;
+    background-color: $white;
   }
 
   .primary-nav__link {
-    color: #fff;
+    color: $white;
   }
 
   .primary-nav__brand {
