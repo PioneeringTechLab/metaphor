@@ -6807,6 +6807,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #ccc;
 }
 
+.img--border-thick {
+  border: 5px solid #fff;
+}
+
 .img--hexagon {
   -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
   clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
@@ -6844,6 +6848,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #bec6c3;
 }
 
+.type--metaphor-grey {
+  color: #4a4a4a;
+}
+
 .type--iron {
   color: #ccc;
 }
@@ -6870,6 +6878,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg--light-gray {
   background-color: #bec6c3;
+}
+
+.bg--metaphor-grey {
+  background-color: #4a4a4a;
 }
 
 .bg--sea-green {
