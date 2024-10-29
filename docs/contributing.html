@@ -34,7 +34,7 @@
           <li><a href="../index.html" class="primary-nav__link">Home</a></li>
           <li><a href="vision.html" class="primary-nav__link active">Documentation</a></li>
           <li><a href="powered-by-metaphor.html" class="primary-nav__link">Powered-by Metaphor</a></li>
-          <li><a href="//github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+          <li><a href="//github.com/pioneeringtechlab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
         </ul>
       </div>
     </nav>
@@ -115,7 +115,7 @@
           var $contributors = $('#contributors');
           $.ajax({
             method: "GET",
-            url: "https://api.github.com/repos/csun-metalab/metaphor/contributors",
+            url: "https://api.github.com/repos/pioneeringtechlab/metaphor/contributors",
             dataType: "json",
             success: function(data){
               for (i = 0; i < data.length; i++) {
@@ -129,8 +129,8 @@
           <br>
 
           <h2 id="dev-setup" class="type--header type--thin">Developer Setup Instructions</h2>
-          <p><strong>#1.</strong> To begin contributing first clone the metaphor repository from <a href="https://github.com/csun-metalab/metaphor.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>:</p>
-          <pre><code>$ git clone https://github.com/csun-metalab/metaphor.git</code></pre>
+          <p><strong>#1.</strong> To begin contributing first clone the metaphor repository from <a href="https://github.com/pioneeringtechlab/metaphor.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>:</p>
+          <pre><code>$ git clone https://github.com/pioneeringtechlab/metaphor.git</code></pre>
 <hr>
           <p><strong>#2.</strong> Next you will need to install all the dependencies identified in the projects <code>package.json</code> &amp; <code>bower.json</code>:</p>
           <pre><code><div class="type--dark-gray">// Node/NPM Packages</div>$ npm install
@@ -150,7 +150,7 @@
           <br>
 
           <h2 id="sass" class="type--header type--thin">SASS/SCSS</h2>
-          <p>All of Metaphors components are written in SASS. As you compile your SASS styles <code>gulp</code> will automatically lint your code to make sure your code conforms to the guidelines specified in the <code>.scss-lint.yml</code> file and the <a href="https://github.com/csun-metalab/metaphor/blob/master/CONTRIBUTING.md">Metaphor contributing guidelines</a>.</p>
+          <p>All of Metaphors components are written in SASS. As you compile your SASS styles <code>gulp</code> will automatically lint your code to make sure your code conforms to the guidelines specified in the <code>.scss-lint.yml</code> file and the <a href="https://github.com/pioneeringtechlab/metaphor/blob/master/CONTRIBUTING.md">Metaphor contributing guidelines</a>.</p>
           <p>To enable linting on your machine you will have to run the following commands in your terminal:</p>
           <pre><code>$ gem install scss_lint</code></pre>
           <p>You will also have to update your text editor of choice to support linting by installing the following packages.</p>
@@ -180,7 +180,7 @@
 
           <h2 id="feature-requests" class="type--header type--thin">Feature Requests</h2>
           <p>Feature requests are welcome. But take a moment to find out whether your idea fits within the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of any new features. Please provide as much detail and context as possible.</p>
-          <p>To view a current log of features/issues visit our <a href="https://github.com/csun-metalab/metaphor/issues">Github issues page.</a></p>
+          <p>To view a current log of features/issues visit our <a href="https://github.com/pioneeringtechlab/metaphor/issues">Github issues page.</a></p>
           <br>
 
           <h2 id="product-versioning" class="type--header type--thin">Product Versioning</h2>
@@ -247,7 +247,7 @@
             <div class="metalab-branding">
               <img src="//www.csun.edu/faculty/imgs/meta-logo-horz.png" alt="CSUN META Lab Logo">
               <ul class="list--unstyled">
-                <li><a href="//metalab.csun.edu">metalab.csun.edu</a></li>
+                <li><a href="//pioneeringtechlab.net/metalab">metalab.csun.edu</a></li>
               </ul>
             </div>
           </div>
